@@ -1,0 +1,1 @@
+# phpstorm-magento2-code-templates
