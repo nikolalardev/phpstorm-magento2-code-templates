@@ -10,26 +10,27 @@ Run the following commands:
 git clone git@github.com:nikolalardev/phpstorm-magento2-code-templates.git m2-code-templates  
 cd m2-code-templates
 ```
-Find PhpStorm **file templates** directory for your OS:
+Find PhpStorm **file templates** directory for your OS and copy files from m2-code-templates to PhpStorm **file templates** folder:
 
 1. Windows Vista, 7, 8, 10:
 ```
-<SYSTEM DRIVE>\Users\<USER ACCOUNT NAME>\.<PRODUCT><VERSION>
+<SYSTEM DRIVE>\Users\<USER ACCOUNT NAME>\.<PRODUCT><VERSION>\fileTempates
 ```
+Copy all files and directories recursively to this folder. Please exclude **.git** folder and README.md file.
 
-2. Linux
-```
-~/.<PRODUCT><VERSION>
-```
-
-3. Mac OS X
-```
-~/Library/Preferences/<PRODUCT><VERSION>/fileTempates
-```
-Copy files from m2-code-templates to PhpStorm **file templates** folder:  
+2. Linux  
+File template folder - `~/.<PRODUCT><VERSION>/fileTempates`
 ```bash
-rsync -avr . /Users/Niko/Library/Preferences/PhpStorm2019.2/fileTemplates --exclude=README.md --exclude=.git
+rsync -avr . ~/.<PRODUCT><VERSION>/fileTempates --exclude=README.md --exclude=.git
 ```
+
+3. Mac OS X  
+File template folder - `~/Library/Preferences/<PRODUCT><VERSION>/fileTempates`
+
+```bash
+rsync -avr . ~/Library/Preferences/<PRODUCT><VERSION>/fileTempates --exclude=README.md --exclude=.git
+```
+
 Restart **PhpStorm**
 
 ## Setup  
