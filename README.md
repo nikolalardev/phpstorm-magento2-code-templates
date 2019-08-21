@@ -2,10 +2,10 @@
 Collection of PhpStorm code templates for Magento 2  
    
 ## PhpStorm
-Install the latest PhpStorm version for your OS from - [PhpStorm website](https://www.jetbrains.com/phpstorm/download/).
+Install the PhpStorm >= 2016.1 version for your OS from - [PhpStorm website](https://www.jetbrains.com/phpstorm/download/).
 
 ## Install
-In the folder that will host your project run the following commands:  
+Run the following commands:  
 ```bash
 git clone git@github.com:nikolalardev/phpstorm-magento2-code-templates.git m2-code-templates  
 cd m2-code-templates
