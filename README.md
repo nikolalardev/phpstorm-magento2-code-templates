@@ -14,14 +14,14 @@ Find PhpStorm **file templates** directory for your OS and copy files from m2-co
 
 1. Windows Vista, 7, 8, 10:
 ```
-<SYSTEM DRIVE>\Users\<USER ACCOUNT NAME>\.<PRODUCT><VERSION>\fileTempates
+<SYSTEM DRIVE>\Users\<USER ACCOUNT NAME>\.<PRODUCT><VERSION>\config\fileTempates
 ```
 Copy all files and directories recursively to this folder. Please exclude **.git** folder and README.md file.
 
 2. Linux  
 File template folder - `~/.<PRODUCT><VERSION>/fileTempates`
 ```bash
-rsync -avr . ~/.<PRODUCT><VERSION>/fileTempates --exclude=README.md --exclude=.git
+rsync -avr . ~/.<PRODUCT><VERSION>/config/fileTempates --exclude=README.md --exclude=.git
 ```
 
 3. Mac OS X  
