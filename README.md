@@ -19,7 +19,7 @@ Find PhpStorm **file templates** directory for your OS and copy files from m2-co
 Copy all files and directories recursively to this folder. Please exclude **.git** folder and README.md file.
 
 2. Linux  
-File template folder - `~/.<PRODUCT><VERSION>/fileTempates`
+File template folder - `~/.<PRODUCT><VERSION>/config/fileTempates`
 ```bash
 rsync -avr . ~/.<PRODUCT><VERSION>/config/fileTempates --exclude=README.md --exclude=.git
 ```
