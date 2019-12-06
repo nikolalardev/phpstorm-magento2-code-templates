@@ -1,0 +1,13 @@
+#parse("M2 PHP File Header.php")
+#set( $vendor = ${Vendor} )
+#if($vendor == "")
+    #set( $vendor = $defaultVendorName )
+#end
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="${Route_Id}" frontName="${Front_Name}">
+            <module name="${vendor}_${Module_Name}">
+        </route>
+    </router>
+</config>
